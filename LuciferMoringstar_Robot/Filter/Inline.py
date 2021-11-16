@@ -89,9 +89,9 @@ async def answer(bot, query):
 
 def get_reply_markup(query):
     buttons = [[
-        InlineKeyboardButton('Deploy Video', url=f'{TUTORIAL}')
+        InlineKeyboardButton('♥️ JOIN NOW ♥️', url=f'{TUTORIAL}')
         ],[
-        InlineKeyboardButton('🔍 Search again 🔎', switch_inline_query_current_chat=query)
+        InlineKeyboardButton('🔍 👀 Search again 👀🔎', switch_inline_query_current_chat=query)
         ]]
     return InlineKeyboardMarkup(buttons)
 
@@ -99,7 +99,7 @@ def get_reply_markup(query):
 def get_size(size):
     """Get size in readable format"""
 
-    units = ["Bytes", "KB", "MB", "GB", "TB", "PB", "EB"]
+    units = ["Bytes", "KB 📽️", "MB 📽️", "GB 📽️", "TB 📽️", "PB", "EB"]
     size = float(size)
     i = 0
     while size >= 1024.0 and i < len(units):
