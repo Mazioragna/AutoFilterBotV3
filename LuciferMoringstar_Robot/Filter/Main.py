@@ -23,7 +23,7 @@ async def filter(client, message):
                     chat_id=message.from_user.id,
                     text="Sorry Sir, You are Banned to use me.",
                     parse_mode="markdown"
-                    disable_web_page_preview=True
+                    disable_web_page_preview=False
                 )
                 return
         except UserNotParticipant:
